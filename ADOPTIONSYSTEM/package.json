@@ -13,7 +13,7 @@
     "Adoption",
     "Appointments"
   ],
-  "author": "AO (Andrés Oliva)",
+  "author": "DC (Diego Chupina)",
   "license": "MIT",
   "dependencies": {
     "adoptionsystem": "file:",
