@@ -1,0 +1,488 @@
+{
+	"info": {
+		"_postman_id": "ec9ecf7b-3846-496d-b743-05b0f889f95a",
+		"name": "Laboratorio#2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956994"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Crear usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Andre",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Mendez",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "amendez",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "amendez2023120@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345789Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "5555-5555",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Informatica/Pictures/Screenshots/Captura de pantalla 2025-01-16 085704.png"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarUsuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/api/users",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarUserID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/api/users/67a6c5c875fb99372ddd9c72",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a6c5c875fb99372ddd9c72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editarUsario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzdkNDAxNGFkZGVlZjA0NTliZTkiLCJ1c2VybmFtZSI6ImFjaHVwaW5hIiwibmFtZSI6IkFsZWphbmRybyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODM0MTAsImV4cCI6MTczODk5NDIxMH0.pKVkLzE8ZRgcc00tw6Mx86WUxnePqjV2e5_vwPQkwKY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "santiago",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/users/67a61e0f617b6d747a4990f6",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a61e0f617b6d747a4990f6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarUsuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/api/users/679c81b746420b06d3cb0491",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"679c81b746420b06d3cb0491"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Animales",
+			"item": [
+				{
+					"name": "CrearAnimales",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "oliva",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "es un tiburon que no respira fuera del agua ",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "18",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "tiburon",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a532c99b7ee966fd38259c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/animals",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarAnimales",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "buscarAnimalID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "EditarAnimale",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "kukuleca",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/animals/67a62f9b88024e6f1a9408dc",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals",
+								"67a62f9b88024e6f1a9408dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarAnimales",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:2636/api/animals/67a6df62e9f89e5ef9174c47",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals",
+								"67a6df62e9f89e5ef9174c47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Diego Andre",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Chupina Mendez",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "dchupina",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dchupina-2023120@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345789Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "4245-6558",
+									"type": "text"
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Informatica/Pictures/Screenshots/hola1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userLoggin",
+									"value": "dchupina-2023120@kinal.edu.gt",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345789Aa!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ODVjMDdkZTg3MDM1NThlOWMzYjQiLCJ1c2VybmFtZSI6ImRjaHVwaW5hIiwibmFtZSI6IkRpZWdvIEFuZHJlIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTczODk2NjgzNywiZXhwIjoxNzM4OTc3NjM3fQ.yQneyAPC_dG7BJLLWMULoEgqWk1j7ktSszTCBx27_Mo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/api/auth/test",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "AgregarCita",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzdkNDAxNGFkZGVlZjA0NTliZTkiLCJ1c2VybmFtZSI6ImFjaHVwaW5hIiwibmFtZSI6IkFsZWphbmRybyIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3Mzg5ODM0MTAsImV4cCI6MTczODk5NDIxMH0.pKVkLzE8ZRgcc00tw6Mx86WUxnePqjV2e5_vwPQkwKY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2024-08-10",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"type": "text"
+								},
+								{
+									"key": "animal",
+									"value": "67a62f9b88024e6f1a9408dc",
+									"type": "text"
+								},
+								{
+									"key": "client",
+									"value": "67a6b22e2556c55c751f6e96",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/appointments",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"appointments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
